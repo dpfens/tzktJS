@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@microsoft/tsdoc": "^0.13.2"
+  },
+  "dependencies": {
+    "typedoc": "^0.21.2"
+  }
+}

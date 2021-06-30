@@ -1,0 +1,4 @@
+{
+  "entryPoints": ["src/tzkt.ts"],
+  "out": "docs"
+}

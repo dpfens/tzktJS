@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "lib": ["ES5", "DOM"],
+      "declaration": true,
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "sourceMap": true,
+      "strict": true,
+      "outFile": "dist/tzkt.js"
+    },
+    "include": ["src/tzkt.ts"],
+    "typedocOptions": {
+      "entryPoints": "src",
+      "out": "docs"
+    }
+}

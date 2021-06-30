@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "lib": ["ES5", "DOM"],
+      "declaration": true,
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "sourceMap": true,
+      "strict": true,
+      "outDir": "dist/modules"
+    },
+    "include": ["src/*.ts"],
+    "exclude": ["src/tzkt.ts", "src/types.ts"],
+    "typedocOptions": {
+      "includes": ["src/*.ts"],
+      "exclude": "src/tzkt.ts",
+      "out": "docs"
+    }
+}
