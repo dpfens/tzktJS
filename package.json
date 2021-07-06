@@ -1,4 +1,8 @@
 {
+  "name": "tzktJS",
+  "version": "0.1.0",
+  "license": "MIT",
+  "homepage": "https://dpfens.github.io/tzktJS/",
   "devDependencies": {
     "@microsoft/tsdoc": "^0.13.2"
   },
