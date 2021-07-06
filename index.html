@@ -1,0 +1,233 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tzKT.JS</title>
+	<meta name="description" content="Documentation for tzKT.JS">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">tzKT.JS</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>tzKT.JS</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#tzktjs" id="tzktjs" style="color: inherit; text-decoration: none;">
+					<h1>tzktJS</h1>
+				</a>
+				<p>A Promise-based Typescript wrapper for the <a href="https://tzkt.io/">tzKT API</a>.</p>
+				<a href="#module-usage" id="module-usage" style="color: inherit; text-decoration: none;">
+					<h1>Module Usage</h1>
+				</a>
+				<p>Create the following <code>main.js</code> file for your project:</p>
+				<pre><code class="language-javascript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #0000FF">*</span><span style="color: #000000"> </span><span style="color: #AF00DB">as</span><span style="color: #000000"> </span><span style="color: #001080">tzkt</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;./dist/modules/quote&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">quote</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">Quote</span><span style="color: #000000">.</span><span style="color: #795E26">last</span><span style="color: #000000">();</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">quote</span><span style="color: #000000">);</span><span style="color: #A31515">```</span>
+<span style="color: #A31515">which should produce output similar to the following:</span>
+<span style="color: #A31515">```</span><span style="color: #001080">json</span>
+<span style="color: #000000">{</span>
+<span style="color: #000000">    </span><span style="color: #A31515">&quot;level&quot;</span><span style="color: #000000">: </span><span style="color: #098658">1540039</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #A31515">&quot;timestamp&quot;</span><span style="color: #000000">: </span><span style="color: #A31515">&quot;2021-07-02T06:12:18.000Z&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #A31515">&quot;btc&quot;</span><span style="color: #000000">: </span><span style="color: #098658">0.00008502634076488495</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #A31515">&quot;eur&quot;</span><span style="color: #000000">: </span><span style="color: #098658">2.364919870348515</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #A31515">&quot;usd&quot;</span><span style="color: #000000">: </span><span style="color: #098658">2.8003953491122076</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #A31515">&quot;cny&quot;</span><span style="color: #000000">: </span><span style="color: #098658">18.147962059921642</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #A31515">&quot;jpy&quot;</span><span style="color: #000000">: </span><span style="color: #098658">312.4811815749048</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #A31515">&quot;krw&quot;</span><span style="color: #000000">: </span><span style="color: #098658">3176.293749811731</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #A31515">&quot;eth&quot;</span><span style="color: #000000">: </span><span style="color: #098658">0.0013720118075705567</span>
+<span style="color: #000000">}</span>
+</code></pre>
+				<p>Then add it as a module to your markup:</p>
+				<pre><code class="language-html"><span style="color: #800000">&lt;html&gt;</span>
+<span style="color: #000000">    ...</span>
+<span style="color: #000000">    </span><span style="color: #800000">&lt;script</span><span style="color: #000000FF"> </span><span style="color: #FF0000">type</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;module&quot;</span><span style="color: #000000FF"> </span><span style="color: #FF0000">src</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;dist/modules/quote.js&quot;</span><span style="color: #800000">&gt;&lt;/script&gt;</span>
+<span style="color: #000000">    ...</span>
+<span style="color: #800000">&lt;/html&gt;</span>
+</code></pre>
+				<p>Alternatively, the <code>tzkt.js</code> can be included instead:</p>
+				<pre><code class="language-html"><span style="color: #800000">&lt;script</span><span style="color: #000000FF"> </span><span style="color: #FF0000">type</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;text/javascript&quot;</span><span style="color: #000000FF"> </span><span style="color: #FF0000">src</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;dist/tzkt.js&quot;</span><span style="color: #800000">&gt;&lt;/script&gt;</span>
+</code></pre>
+				<a href="#pagination" id="pagination" style="color: inherit; text-decoration: none;">
+					<h3>Pagination</h3>
+				</a>
+				<p>While tzKT offers multiple ways of paginating, this wrapper implementation paginates using <code>offset</code> and <code>limit</code> values.</p>
+				<p>Here is an example of how to paginate through all Tezos accounts:</p>
+				<pre><code class="language-typescript"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">accounts</span><span style="color: #000000">: </span><span style="color: #267F99">Account</span><span style="color: #000000">[] = [],</span>
+<span style="color: #000000">    </span><span style="color: #001080">parameters</span><span style="color: #000000">: </span><span style="color: #267F99">PaginationParameters</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">      </span><span style="color: #A31515">&#039;limit&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">10000</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #A31515">&#039;offset&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">0</span>
+<span style="color: #000000">    },</span>
+<span style="color: #000000">    </span><span style="color: #001080">page</span><span style="color: #000000">: </span><span style="color: #267F99">Account</span><span style="color: #000000">[] = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">Account</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #001080">parameters</span><span style="color: #000000">);</span>
+<span style="color: #AF00DB">while</span><span style="color: #000000"> (</span><span style="color: #001080">page</span><span style="color: #000000">.</span><span style="color: #001080">length</span><span style="color: #000000">) {</span>
+<span style="color: #000000">  </span><span style="color: #001080">parameters</span><span style="color: #000000">.</span><span style="color: #001080">offset</span><span style="color: #000000"> += </span><span style="color: #001080">page</span><span style="color: #000000">.</span><span style="color: #001080">length</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">page</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">Account</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #001080">parameters</span><span style="color: #000000">);</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">for</span><span style="color: #000000"> (</span><span style="color: #0000FF">var</span><span style="color: #000000"> </span><span style="color: #001080">i</span><span style="color: #000000"> = </span><span style="color: #098658">0</span><span style="color: #000000">; </span><span style="color: #001080">i</span><span style="color: #000000"> &lt; </span><span style="color: #001080">page</span><span style="color: #000000">.</span><span style="color: #001080">length</span><span style="color: #000000">; </span><span style="color: #001080">i</span><span style="color: #000000">++) {</span>
+<span style="color: #000000">    </span><span style="color: #001080">accounts</span><span style="color: #000000">.</span><span style="color: #795E26">push</span><span style="color: #000000">(</span><span style="color: #001080">page</span><span style="color: #000000">[</span><span style="color: #001080">i</span><span style="color: #000000">]);</span>
+<span style="color: #000000">  }</span>
+<span style="color: #000000">}</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">accounts</span><span style="color: #000000">);</span>
+</code></pre>
+				<a href="#using-modifiers" id="using-modifiers" style="color: inherit; text-decoration: none;">
+					<h3>Using modifiers</h3>
+				</a>
+				<p>Currently this library does not have full support for parameter modifiers (ex. <code>eq</code>, <code>ne</code>, <code>gt</code>, <code>ge</code>, <code>lt</code>, <code>le</code>, <code>in</code>, <code>ni</code>).  This means:</p>
+				<ul>
+					<li>In the case of <code>Date</code> parameters, developers must convert the <code>Date</code> instance to a <code>string</code> (using <code>toISOString</code>) when using modifiers, instead of passing in a <code>Date</code> instance:<pre><code class="language-typescript"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">valentinesDay</span><span style="color: #000000">: </span><span style="color: #267F99">Date</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(</span><span style="color: #098658">2021</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">14</span><span style="color: #000000">),</span>
+<span style="color: #000000">    </span><span style="color: #001080">parameters</span><span style="color: #000000">: </span><span style="color: #267F99">GetQuoteParameters</span><span style="color: #000000"> = {</span><span style="color: #A31515">&#039;timestamp.gt&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #001080">valentinesDay</span><span style="color: #000000">.</span><span style="color: #795E26">toISOString</span><span style="color: #000000">()},</span>
+<span style="color: #000000">    </span><span style="color: #001080">quotes</span><span style="color: #000000">: </span><span style="color: #267F99">Quote</span><span style="color: #000000">[] = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">Quote</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #001080">parameters</span><span style="color: #000000">);</span>
+</code></pre>
+					</li>
+				</ul>
+				<a href="#changing-networks" id="changing-networks" style="color: inherit; text-decoration: none;">
+					<h3>Changing Networks</h3>
+				</a>
+				<p>To change the network the API runs against, change the <code>domain</code> argument in the function/method to use a different base URL listed on the <a href="https://api.tzkt.io/#section/Introduction">tzKT API home page</a>.</p>
+				<pre><code class="language-typescript"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">lastQuote</span><span style="color: #000000">: </span><span style="color: #267F99">Quote</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">Quote</span><span style="color: #000000">.</span><span style="color: #795E26">last</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;https://api.florencenet.tzkt.io&#039;</span><span style="color: #000000">)</span>
+</code></pre>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/account.html">account</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/bigmap.html">bigmap</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/block.html">block</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/commitment.html">commitment</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/contract.html">contract</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/cycle.html">cycle</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/delegate.html">delegate</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/head.html">head</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/operation.html">operation</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/protocol.html">protocol</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/quote.html">quote</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/reward.html">reward</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/right.html">right</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/software.html">software</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/statistics.html">statistics</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/types.html">types</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/voting.html">voting</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-56708312-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
