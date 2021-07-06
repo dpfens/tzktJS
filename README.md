@@ -75,3 +75,6 @@ To change the network the API runs against, change the `domain` argument in the 
 ```typescript
 let lastQuote: Quote = await Quote.last('https://api.florencenet.tzkt.io')
 ```
+
+## Contributions
+Forks/Pull Requests are welcome.  Feel free to create issues where needed.
