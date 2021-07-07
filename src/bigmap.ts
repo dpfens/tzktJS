@@ -21,6 +21,12 @@ interface GetBigMapUpdatesParameters extends PaginationParameters, Sortable {
   micheline?: number;
 };
 
+interface GetBigMapByContractParameters extends PaginationParameters, Sortable {
+  select?: string[];
+  tags?: string[];
+  micheline?: number;
+};
+
 /**
  * Endpoints for fetching BigMaps.  For more information see the {@link https://api.tzkt.io/#tag/BigMaps | BigMap API documentation } on {@link https://tzkt.io/ | tzKT }.
  *
@@ -118,8 +124,57 @@ class BigMap {
       }
     });
     let data = await response.json();
-    return BigMap.fromAPI(data);;
+    return BigMap.fromAPI(data);
   }
+
+  /**
+  * Fetches bigmap by Contract address from {@link https://tzkt.io/ | tzKT }.
+  * @public
+  *
+  * @returns Returns the bigmaps associated with the given Contract.
+  * @see {@link https://api.tzkt.io/#operation/Contracts_GetBigMaps | get contract bigmaps }.
+  */
+  static async byContract(address: string, parameters: GetBigMapByContractParameters | null, domain: string = 'https://api.tzkt.io'): Promise<BigMap[]> {
+    let url: URL = new URL(`${domain}/v1/contracts/${address}/bigmaps`);
+    if (parameters) {
+      url.search = new URLSearchParams(<any>parameters).toString();
+    }
+    let response = await fetch(<any>url, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    let data = await response.json();
+    let output: BigMap[] = [];
+    for (var i = 0; i < data.length; i++) {
+      let instance: BigMap = BigMap.fromAPI(data[i]);
+      output.push(instance);
+    }
+    return output;
+  }
+
+  /**
+  * Fetches bigmap by name from {@link https://tzkt.io/ | tzKT }.
+  * @public
+  *
+  * @returns Returns the bigmap with the given name
+  * @see {@link https://api.tzkt.io/#operation/Contracts_GetBigMapByName | get bigmap by name }.
+  */
+  static async byName(address: string, name: string, micheline: number=0, domain: string = 'https://api.tzkt.io'): Promise<BigMap> {
+    let url: URL = new URL(`${domain}/v1/contracts/${address}/bigmaps/${name}`);
+    let queryParameters: any = {'micheline': micheline.toString() };
+    url.search = new URLSearchParams(queryParameters).toString();
+    let response = await fetch(<any>url, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    let data = await response.json();
+    return BigMap.fromAPI(data);
+  }
+
 }
 
 
@@ -201,6 +256,24 @@ class BigMapUpdate {
       timestamp = new Date(timestamp);
     }
     return new BigMapUpdate(id, level, timestamp, bigmap, contract, path, action, content);
+  }
+
+  static async get(parameters: GetBigMapUpdatesParameters | null, domain: string = 'https://api.tzkt.io'): Promise<BigMapUpdate[]> {
+    let url: URL = new URL(`${domain}/v1/bigmaps/updates`);
+    url.search = new URLSearchParams(parameters as Record<string, string>).toString();
+    let response: Response = await fetch(<any>url, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    let data = await response.json();
+    let output: BigMapUpdate[] = [];
+    for (var i = 0; i < data.length; i++) {
+      let bigMapUpdate = BigMapUpdate.fromAPI(data[i]);
+      output.push(bigMapUpdate);
+    }
+    return output;
   }
 }
 
