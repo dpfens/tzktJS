@@ -200,7 +200,7 @@ class Reward {
   *
   * @example Usage
   * ```typescript
-  * let address: string = '';
+  * let address: string = 'tz1gfArv665EUkSg2ojMBzcbfwuPxAvqPvjo';
   * let bakerRewards: Reward[] = await Reward.byBaker(address);
   * ```
   *
@@ -234,7 +234,7 @@ class Reward {
   *
   * @example Usage
   * ```typescript
-  * let address: string = '';
+  * let address: string = 'tz1gfArv665EUkSg2ojMBzcbfwuPxAvqPvjo';
   * let cycle: number = 14;
   * let bakerRewards: Reward[] = await Reward.byBakerCycle(address, cycle);
   * ```
