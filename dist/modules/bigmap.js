@@ -10,6 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 ;
 ;
+;
 class BigMap {
     constructor(ptr, contract, path, tags, active, firstLevel, lastLevel, totalKeys, activeKeys, updates, keyType, valueType) {
         this.ptr = ptr;
@@ -73,7 +74,42 @@ class BigMap {
             });
             let data = yield response.json();
             return BigMap.fromAPI(data);
-            ;
+        });
+    }
+    static byContract(address, parameters, domain = 'https://api.tzkt.io') {
+        return __awaiter(this, void 0, void 0, function* () {
+            let url = new URL(`${domain}/v1/contracts/${address}/bigmaps`);
+            if (parameters) {
+                url.search = new URLSearchParams(parameters).toString();
+            }
+            let response = yield fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            let data = yield response.json();
+            let output = [];
+            for (var i = 0; i < data.length; i++) {
+                let instance = BigMap.fromAPI(data[i]);
+                output.push(instance);
+            }
+            return output;
+        });
+    }
+    static byName(address, name, micheline = 0, domain = 'https://api.tzkt.io') {
+        return __awaiter(this, void 0, void 0, function* () {
+            let url = new URL(`${domain}/v1/contracts/${address}/bigmaps/${name}`);
+            let queryParameters = { 'micheline': micheline.toString() };
+            url.search = new URLSearchParams(queryParameters).toString();
+            let response = yield fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            let data = yield response.json();
+            return BigMap.fromAPI(data);
         });
     }
 }
@@ -118,6 +154,25 @@ class BigMapUpdate {
             timestamp = new Date(timestamp);
         }
         return new BigMapUpdate(id, level, timestamp, bigmap, contract, path, action, content);
+    }
+    static get(parameters, domain = 'https://api.tzkt.io') {
+        return __awaiter(this, void 0, void 0, function* () {
+            let url = new URL(`${domain}/v1/bigmaps/updates`);
+            url.search = new URLSearchParams(parameters).toString();
+            let response = yield fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            let data = yield response.json();
+            let output = [];
+            for (var i = 0; i < data.length; i++) {
+                let bigMapUpdate = BigMapUpdate.fromAPI(data[i]);
+                output.push(bigMapUpdate);
+            }
+            return output;
+        });
     }
 }
 class BigMapKey {

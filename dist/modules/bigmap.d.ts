@@ -18,6 +18,11 @@ interface GetBigMapUpdatesParameters extends PaginationParameters, Sortable {
     level?: number;
     micheline?: number;
 }
+interface GetBigMapByContractParameters extends PaginationParameters, Sortable {
+    select?: string[];
+    tags?: string[];
+    micheline?: number;
+}
 declare class BigMap {
     readonly ptr: number;
     readonly contract: string | null;
@@ -35,6 +40,8 @@ declare class BigMap {
     static fromAPI(data: any): BigMap;
     static get(parameters: GetBigMapParameters, domain?: string): Promise<BigMap[]>;
     static byID(id: number, micheline?: number, domain?: string): Promise<BigMap>;
+    static byContract(address: string, parameters: GetBigMapByContractParameters | null, domain?: string): Promise<BigMap[]>;
+    static byName(address: string, name: string, micheline?: number, domain?: string): Promise<BigMap>;
 }
 declare class BigMapType {
     readonly prim: number;
@@ -55,6 +62,7 @@ declare class BigMapUpdate {
     content: any;
     constructor(id: number, level: number, timestamp: Date, bigmap: number, contract: any, path: string, action: string, content: any);
     static fromAPI(data: any): BigMapUpdate;
+    static get(parameters: GetBigMapUpdatesParameters | null, domain?: string): Promise<BigMapUpdate[]>;
 }
 declare class BigMapKey {
     id: number;
