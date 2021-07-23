@@ -140,6 +140,11 @@ interface GetBigMapUpdatesParameters extends PaginationParameters, Sortable {
     level?: number;
     micheline?: number;
 }
+interface GetBigMapByContractParameters extends PaginationParameters, Sortable {
+    select?: string[];
+    tags?: string[];
+    micheline?: number;
+}
 declare class BigMap {
     readonly ptr: number;
     readonly contract: string | null;
@@ -157,6 +162,8 @@ declare class BigMap {
     static fromAPI(data: any): BigMap;
     static get(parameters: GetBigMapParameters, domain?: string): Promise<BigMap[]>;
     static byID(id: number, micheline?: number, domain?: string): Promise<BigMap>;
+    static byContract(address: string, parameters: GetBigMapByContractParameters | null, domain?: string): Promise<BigMap[]>;
+    static byName(address: string, name: string, micheline?: number, domain?: string): Promise<BigMap>;
 }
 declare class BigMapType {
     readonly prim: number;
@@ -177,6 +184,7 @@ declare class BigMapUpdate {
     content: any;
     constructor(id: number, level: number, timestamp: Date, bigmap: number, contract: any, path: string, action: string, content: any);
     static fromAPI(data: any): BigMapUpdate;
+    static get(parameters: GetBigMapUpdatesParameters | null, domain?: string): Promise<BigMapUpdate[]>;
 }
 declare class BigMapKey {
     id: number;
@@ -410,6 +418,128 @@ interface GetEndorsementsParameters extends PaginationParameters, Sortable {
     select?: string[];
     quote?: string;
 }
+interface GetBallotsParameters extends PaginationParameters, Sortable {
+    delegate?: string;
+    level?: number;
+    timestamp?: Date;
+    epoch?: number;
+    period?: number;
+    proposal?: string;
+    select?: string[];
+    quote?: string;
+}
+interface GetProposalsParameters extends PaginationParameters, Sortable {
+    delegate?: string;
+    level?: number;
+    timestamp?: Date;
+    epoch?: number;
+    period?: number;
+    proposal?: string;
+    duplicated?: boolean;
+    select?: string[];
+    quote?: string;
+}
+interface GetActivationParameters extends PaginationParameters, Sortable {
+    account?: string;
+    level?: number;
+    timestamp?: Date;
+    select?: string[];
+    quote?: string;
+}
+interface GetDoubleBakingParameters extends PaginationParameters, Sortable {
+    accuser?: string;
+    offender?: string;
+    level?: number;
+    timestamp?: Date;
+    select?: string[];
+    quote?: string;
+}
+interface GetDoubleEndorsingParameters extends PaginationParameters, Sortable {
+    accuser?: string;
+    offender?: string;
+    level?: number;
+    timestamp?: Date;
+    select?: string[];
+    quote?: string;
+}
+interface GetNonceRevelationParameters extends PaginationParameters, Sortable {
+    baker?: string;
+    sender?: string;
+    level?: number;
+    timestamp?: Date;
+    select?: string[];
+    quote?: string;
+}
+interface GetDelegationParameters extends PaginationParameters, Sortable {
+    initiator?: string;
+    sender?: string;
+    prevDelegate?: string;
+    newDelegate?: string;
+    level?: number;
+    timestamp?: Date;
+    select?: string[];
+    quote?: string;
+}
+interface GetOriginationParameters extends PaginationParameters, Sortable {
+    initiator?: string;
+    sender?: string;
+    contractManager?: string;
+    contractDelegate?: string;
+    originatedContract?: string;
+    typeHash?: string;
+    codeHash?: string;
+    level?: number;
+    timestamp?: Date;
+    status?: string;
+    micheline?: number;
+    select?: string[];
+    quote?: string;
+}
+interface GetTransactionParameters extends PaginationParameters, Sortable {
+    initiator?: string;
+    sender?: string;
+    target?: string;
+    amount?: number;
+    level?: number;
+    timestamp?: Date;
+    entrypoint?: string;
+    parameters?: any;
+    hasInternals?: boolean;
+    status?: string;
+    micheline?: number;
+    select?: string[];
+    quote?: string;
+}
+interface GetRevealParameters extends PaginationParameters, Sortable {
+    sender?: string;
+    level?: number;
+    timestamp?: Date;
+    select?: string[];
+    quote?: string;
+}
+interface GetMigrationParameters extends PaginationParameters, Sortable {
+    account?: string;
+    kind?: string;
+    balanceChange?: string;
+    level?: number;
+    timestamp?: Date;
+    select?: string[];
+    quote?: string;
+}
+interface GetRevelationPenaltyParameters extends PaginationParameters, Sortable {
+    baker?: string;
+    level?: number;
+    timestamp?: Date;
+    select?: string[];
+    quote?: string;
+}
+interface GetBakingParameters extends PaginationParameters, Sortable {
+    baker?: string;
+    level?: number;
+    timestamp?: Date;
+    select?: string[];
+    quote?: string;
+}
 declare class Operation {
     readonly type: string | null;
     readonly id: number;
@@ -429,32 +559,46 @@ declare class Operation {
     static byAccount(address: string, options: GetByAddressParameters | null, domain?: string): Promise<Operation[]>;
     static typeByHash(type: string, hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static typeCount(type: string, level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getEndorsements(parameters?: GetEndorsementsParameters, domain?: string): Promise<Operation[]>;
     static endorsementsByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static endorsementsCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getBallots(parameters?: GetBallotsParameters, domain?: string): Promise<Operation[]>;
     static ballotsByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static ballotsCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getProposals(parameters?: GetProposalParameters, domain?: string): Promise<Operation[]>;
     static proposalsByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static proposalsCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getActivations(parameters?: GetActivationParameters, domain?: string): Promise<Operation[]>;
     static activationsByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static activationsCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getDoubleBakings(parameters?: GetDoubleBakingParameters, domain?: string): Promise<Operation[]>;
     static doubleBakingByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static doubleBakingCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getDoubleEndorsings(parameters?: GetDoubleEndorsingParameters, domain?: string): Promise<Operation[]>;
     static doubleEndorsingByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static doubleEndorsingCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getNonceRevelations(parameters?: GetNonceRevelationParameters, domain?: string): Promise<Operation[]>;
     static nonceRevelationsByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static nonceRevelationsCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getDelegations(parameters?: GetDelegationParameters, domain?: string): Promise<Operation[]>;
     static delegationsByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static delegationsCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getOriginations(parameters?: GetOriginationParameters, domain?: string): Promise<Operation[]>;
     static originationsByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static originationsCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getTransactions(parameters?: GetTransactionParameters, domain?: string): Promise<Operation[]>;
     static transactionsByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static transactionsCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getReveals(parameters?: GetRevealParameters, domain?: string): Promise<Operation[]>;
     static revealsByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static revealsCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getMigrations(parameters?: GetMigrationParameters, domain?: string): Promise<Operation[]>;
     static migrationsByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static migrationsCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getRevelationPenalties(parameters?: GetRevelationPenaltyParameters, domain?: string): Promise<Operation[]>;
     static revelationPenaltiesByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static revelationPenaltiesCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
+    static getBakings(parameters?: GetBakingParameters, domain?: string): Promise<Operation[]>;
     static bakingByHash(hash: string, quote: string | null, domain?: string): Promise<Operation[]>;
     static bakingCount(level: number | null, timestamp: Date | null, domain?: string): Promise<number>;
 }
