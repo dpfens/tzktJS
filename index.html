@@ -87,7 +87,7 @@
 				<p>Then add it as a module to your markup:</p>
 				<pre><code class="language-html"><span style="color: #800000">&lt;html&gt;</span>
 <span style="color: #000000">    ...</span>
-<span style="color: #000000">    </span><span style="color: #800000">&lt;script</span><span style="color: #000000FF"> </span><span style="color: #FF0000">type</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;module&quot;</span><span style="color: #000000FF"> </span><span style="color: #FF0000">src</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;dist/modules/quote.js&quot;</span><span style="color: #800000">&gt;&lt;/script&gt;</span>
+<span style="color: #000000">    </span><span style="color: #800000">&lt;script</span><span style="color: #000000FF"> </span><span style="color: #FF0000">type</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;module&quot;</span><span style="color: #000000FF"> </span><span style="color: #FF0000">src</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;dist/modules/quote.&quot;</span><span style="color: #800000">&gt;&lt;/script&gt;</span>
 <span style="color: #000000">    ...</span>
 <span style="color: #800000">&lt;/html&gt;</span>
 </code></pre>
@@ -131,6 +131,10 @@
 				<p>To change the network the API runs against, change the <code>domain</code> argument in the function/method to use a different base URL listed on the <a href="https://api.tzkt.io/#section/Introduction">tzKT API home page</a>.</p>
 				<pre><code class="language-typescript"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">lastQuote</span><span style="color: #000000">: </span><span style="color: #267F99">Quote</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">Quote</span><span style="color: #000000">.</span><span style="color: #795E26">last</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;https://api.florencenet.tzkt.io&#039;</span><span style="color: #000000">)</span>
 </code></pre>
+				<a href="#contributions" id="contributions" style="color: inherit; text-decoration: none;">
+					<h2>Contributions</h2>
+				</a>
+				<p>Forks/Pull Requests are welcome.  Feel free to create issues where needed.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

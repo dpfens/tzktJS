@@ -1,0 +1,1088 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Contract | tzKT.JS</title>
+	<meta name="description" content="Documentation for tzKT.JS">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">tzKT.JS</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">tzKT.JS</a>
+				</li>
+				<li>
+					<a href="../modules/contract.html">contract</a>
+				</li>
+				<li>
+					<a href="contract.Contract.html">Contract</a>
+				</li>
+			</ul>
+			<h1>Class Contract</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Contracts are accounts associated with Michelson scripts on the <a href="https://tezos.com/" class="external">Tezos blockchain</a>.  They are created with an explicit origination operation and are therefore sometimes called originated accounts.  For more information see the <a href="https://api.tzkt.io/#tag/Contracts" class="external">Contracts API documentation</a> on <a href="https://tzkt.io/" class="external">tzKT</a>.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>remark</dt>
+						<dd><p>The address of a smart contract always starts with the letters &quot;KT1&quot;.</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="account.AccountBase.html" class="tsd-signature-type" data-tsd-kind="Class">AccountBase</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">Contract</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="contract.Contract.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#address" class="tsd-kind-icon">address</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#alias" class="tsd-kind-icon">alias</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#balance" class="tsd-kind-icon">balance</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#contracts" class="tsd-kind-icon">contracts</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#counter" class="tsd-kind-icon">counter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contract.Contract.html#delegate" class="tsd-kind-icon">delegate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#delegationLevel" class="tsd-kind-icon">delegation<wbr>Level</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#delegationTime" class="tsd-kind-icon">delegation<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#firstActivity" class="tsd-kind-icon">first<wbr>Activity</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#firstActivityTime" class="tsd-kind-icon">first<wbr>Activity<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#lastActivity" class="tsd-kind-icon">last<wbr>Activity</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#lastActivityTime" class="tsd-kind-icon">last<wbr>Activity<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#metadata" class="tsd-kind-icon">metadata</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#numActivations" class="tsd-kind-icon">num<wbr>Activations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#numContracts" class="tsd-kind-icon">num<wbr>Contracts</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#numDelegations" class="tsd-kind-icon">num<wbr>Delegations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#numMigrations" class="tsd-kind-icon">num<wbr>Migrations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#numOriginations" class="tsd-kind-icon">num<wbr>Originations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#numReveals" class="tsd-kind-icon">num<wbr>Reveals</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#numTransactions" class="tsd-kind-icon">num<wbr>Transactions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#operations" class="tsd-kind-icon">operations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#publicKey" class="tsd-kind-icon">public<wbr>Key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#revealed" class="tsd-kind-icon">revealed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#type" class="tsd-kind-icon">type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="contract.Contract.html#toString" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="contract.Contract.html#byAccount" class="tsd-kind-icon">by<wbr>Account</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="contract.Contract.html#byAddress" class="tsd-kind-icon">by<wbr>Address</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="contract.Contract.html#code" class="tsd-kind-icon">code</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="contract.Contract.html#count" class="tsd-kind-icon">count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static"><a href="contract.Contract.html#fromAPI" class="tsd-kind-icon">fromAPI</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="contract.Contract.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="contract.Contract.html#similar" class="tsd-kind-icon">similar</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Contract<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules/types.html#AccountTypeParameter" class="tsd-signature-type" data-tsd-kind="Type alias">AccountTypeParameter</a>, alias<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, publicKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, revealed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, balance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, counter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, delegate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, delegationLevel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, delegationTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span>, numContracts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, numActivations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, numDelegations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, numOriginations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, numTransactions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, numReveals<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, numMigrations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, firstActivity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, firstActivityTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span>, lastActivity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, lastActivityTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span>, contracts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a><span class="tsd-signature-symbol">[]</span>, operations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="operation.Operation.html" class="tsd-signature-type" data-tsd-kind="Class">Operation</a><span class="tsd-signature-symbol">[]</span>, metadata<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/contract.ts#L92">contract.ts:92</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules/types.html#AccountTypeParameter" class="tsd-signature-type" data-tsd-kind="Type alias">AccountTypeParameter</a></h5>
+								</li>
+								<li>
+									<h5>alias: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>address: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>publicKey: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>revealed: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>balance: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>counter: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>delegate: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>delegationLevel: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>delegationTime: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>numContracts: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>numActivations: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>numDelegations: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>numOriginations: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>numTransactions: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>numReveals: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>numMigrations: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>firstActivity: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>firstActivityTime: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>lastActivity: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>lastActivityTime: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>contracts: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>operations: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="operation.Operation.html" class="tsd-signature-type" data-tsd-kind="Class">Operation</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>metadata: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="address" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> address</h3>
+					<div class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#address">address</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L244">account.ts:244</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="alias" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> alias</h3>
+					<div class="tsd-signature tsd-kind-icon">alias<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#alias">alias</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L243">account.ts:243</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="balance" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> balance</h3>
+					<div class="tsd-signature tsd-kind-icon">balance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#balance">balance</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L247">account.ts:247</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="contracts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> contracts</h3>
+					<div class="tsd-signature tsd-kind-icon">contracts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#contracts">contracts</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L262">account.ts:262</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="counter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> counter</h3>
+					<div class="tsd-signature tsd-kind-icon">counter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#counter">counter</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L248">account.ts:248</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="delegate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> delegate</h3>
+					<div class="tsd-signature tsd-kind-icon">delegate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/contract.ts#L87">contract.ts:87</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="delegationLevel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> delegation<wbr>Level</h3>
+					<div class="tsd-signature tsd-kind-icon">delegation<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#delegationLevel">delegationLevel</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L249">account.ts:249</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="delegationTime" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> delegation<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">delegation<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#delegationTime">delegationTime</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L250">account.ts:250</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="firstActivity" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> first<wbr>Activity</h3>
+					<div class="tsd-signature tsd-kind-icon">first<wbr>Activity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#firstActivity">firstActivity</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L258">account.ts:258</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="firstActivityTime" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> first<wbr>Activity<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">first<wbr>Activity<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#firstActivityTime">firstActivityTime</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L259">account.ts:259</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="lastActivity" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> last<wbr>Activity</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Activity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#lastActivity">lastActivity</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L260">account.ts:260</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="lastActivityTime" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> last<wbr>Activity<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Activity<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#lastActivityTime">lastActivityTime</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L261">account.ts:261</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="metadata" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> metadata</h3>
+					<div class="tsd-signature tsd-kind-icon">metadata<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#metadata">metadata</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L264">account.ts:264</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="numActivations" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> num<wbr>Activations</h3>
+					<div class="tsd-signature tsd-kind-icon">num<wbr>Activations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#numActivations">numActivations</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L252">account.ts:252</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="numContracts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> num<wbr>Contracts</h3>
+					<div class="tsd-signature tsd-kind-icon">num<wbr>Contracts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#numContracts">numContracts</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L251">account.ts:251</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="numDelegations" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> num<wbr>Delegations</h3>
+					<div class="tsd-signature tsd-kind-icon">num<wbr>Delegations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#numDelegations">numDelegations</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L253">account.ts:253</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="numMigrations" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> num<wbr>Migrations</h3>
+					<div class="tsd-signature tsd-kind-icon">num<wbr>Migrations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#numMigrations">numMigrations</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L257">account.ts:257</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="numOriginations" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> num<wbr>Originations</h3>
+					<div class="tsd-signature tsd-kind-icon">num<wbr>Originations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#numOriginations">numOriginations</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L254">account.ts:254</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="numReveals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> num<wbr>Reveals</h3>
+					<div class="tsd-signature tsd-kind-icon">num<wbr>Reveals<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#numReveals">numReveals</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L256">account.ts:256</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="numTransactions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> num<wbr>Transactions</h3>
+					<div class="tsd-signature tsd-kind-icon">num<wbr>Transactions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#numTransactions">numTransactions</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L255">account.ts:255</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="operations" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> operations</h3>
+					<div class="tsd-signature tsd-kind-icon">operations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="operation.Operation.html" class="tsd-signature-type" data-tsd-kind="Class">Operation</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#operations">operations</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L263">account.ts:263</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="publicKey" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> public<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">public<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#publicKey">publicKey</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L245">account.ts:245</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="revealed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> revealed</h3>
+					<div class="tsd-signature tsd-kind-icon">revealed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#revealed">revealed</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L246">account.ts:246</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="type" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules/types.html#AccountTypeParameter" class="tsd-signature-type" data-tsd-kind="Type alias">AccountTypeParameter</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#type">type</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L242">account.ts:242</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="toString" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#toString">toString</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/account.ts#L295">account.ts:295</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="byAccount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> by<wbr>Account</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">by<wbr>Account<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/contract.getRelatedToAddressParameters.html" class="tsd-signature-type" data-tsd-kind="Interface">getRelatedToAddressParameters</a>, domain<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/contract.ts#L211">contract.ts:211</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a list of contracts created by (or related to) the specified account from <a href="https://tzkt.io/" class="external">tzKT</a>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p><a href="https://api.tzkt.io/#operation/Accounts_GetByAddress" class="external">get account by address</a>.</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p>Fetch Contracts related to an Account</p>
+										<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+											<h1>Usage</h1>
+										</a>
+										<pre><code class="language-typescript"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">accountAddress</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;tz1WEHHVMWxQUtkWAgrJBFGXjJ5YqZVgfPVE&#039;</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">contracts</span><span style="color: #000000">: </span><span style="color: #267F99">Contract</span><span style="color: #000000">[] = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">Contract</span><span style="color: #000000">.</span><span style="color: #795E26">byAccount</span><span style="color: #000000">(</span><span style="color: #001080">accountAddress</span><span style="color: #000000">);</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>address: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>parameters: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/contract.getRelatedToAddressParameters.html" class="tsd-signature-type" data-tsd-kind="Interface">getRelatedToAddressParameters</a></h5>
+								</li>
+								<li>
+									<h5>domain: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;https://api.tzkt.io&#x27;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Returns a list of contracts related to the specified account.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="byAddress" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> by<wbr>Address</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">by<wbr>Address<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, domain<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/contract.ts#L246">contract.ts:246</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches contracts by address from <a href="https://tzkt.io/" class="external">tzKT</a>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p><a href="https://api.tzkt.io/#operation/Contracts_GetByAddress" class="external">get contract by address</a>.</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p>Fetch Contract by Address</p>
+										<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+											<h1>Usage</h1>
+										</a>
+										<pre><code class="language-typescript"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">contractAddress</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;KT1Sc5aXe5ZADkbdbXSBo2v6wNDgFP9XafRs&#039;</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">contract</span><span style="color: #000000">: </span><span style="color: #267F99">Contract</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">Contract</span><span style="color: #000000">.</span><span style="color: #795E26">byAddress</span><span style="color: #000000">(</span><span style="color: #001080">contractAddress</span><span style="color: #000000">);</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>address: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>domain: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;https://api.tzkt.io&#x27;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Returns a contract with the specified address.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="code" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> code</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, format<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, domain<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/contract.ts#L309">contract.ts:309</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches code for the specified contract from <a href="https://tzkt.io/" class="external">tzKT</a>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p><a href="https://api.tzkt.io/#operation/Contracts_GetCode" class="external">get contract code</a>.</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p>Fetch Code for a Contract</p>
+										<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+											<h1>Usage</h1>
+										</a>
+										<pre><code class="language-typescript"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">contractAddress</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;KT1Sc5aXe5ZADkbdbXSBo2v6wNDgFP9XafRs&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">format</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000"> = </span><span style="color: #098658">2</span><span style="color: #000000">; </span><span style="color: #008000">// return code in bytes</span>
+<span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">contractCode</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">Contract</span><span style="color: #000000">.</span><span style="color: #795E26">code</span><span style="color: #000000">(</span><span style="color: #001080">contractAddress</span><span style="color: #000000">, </span><span style="color: #001080">format</span><span style="color: #000000">);</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>address: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>format: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>domain: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;https://api.tzkt.io&#x27;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Returns a code of the specified contract.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="count" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">count<span class="tsd-signature-symbol">(</span>kind<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#ContractKindParameter" class="tsd-signature-type" data-tsd-kind="Type alias">ContractKindParameter</a>, domain<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/contract.ts#L151">contract.ts:151</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a number of contract accounts from <a href="https://tzkt.io/" class="external">tzKT</a>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p><a href="https://api.tzkt.io/#operation/Contracts_GetCount" class="external">get contracts count</a>.</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p>Fetch Contract count</p>
+										<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+											<h1>Usage</h1>
+										</a>
+										<pre><code class="language-typescript"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">contractCount</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000"> = </span><span style="color: #001080">Contract</span><span style="color: #000000">.</span><span style="color: #795E26">count</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;delegator_contract&#039;</span><span style="color: #000000">)</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>kind: <a href="../modules/types.html#ContractKindParameter" class="tsd-signature-type" data-tsd-kind="Type alias">ContractKindParameter</a></h5>
+								</li>
+								<li>
+									<h5>domain: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;https://api.tzkt.io&#x27;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Returns a number of contract accounts.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static">
+					<a name="fromAPI" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> fromAPI</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">fromAPI<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="account.AccountBase.html">AccountBase</a>.<a href="account.AccountBase.html#fromAPI">fromAPI</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/contract.ts#L100">contract.ts:100</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="get" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/contract.GetContractParameters.html" class="tsd-signature-type" data-tsd-kind="Interface">GetContractParameters</a>, domain<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/contract.ts#L176">contract.ts:176</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches contracts from <a href="https://tzkt.io/" class="external">tzKT</a>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p><a href="https://api.tzkt.io/#operation/Contracts_Get" class="external">get contracts</a>.</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p>Fetch Contracts</p>
+										<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+											<h1>Usage</h1>
+										</a>
+										<pre><code class="language-typescript"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">parameters</span><span style="color: #000000">: </span><span style="color: #267F99">GetContractParameters</span><span style="color: #000000"> = {</span><span style="color: #A31515">&#039;kind&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;delegator_contract&#039;</span><span style="color: #000000">, </span><span style="color: #001080">includeStorage:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">};</span>
+<span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">contracts</span><span style="color: #000000">: </span><span style="color: #267F99">Contract</span><span style="color: #000000">[] = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">Contract</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #001080">parameters</span><span style="color: #000000">);</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parameters: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/contract.GetContractParameters.html" class="tsd-signature-type" data-tsd-kind="Interface">GetContractParameters</a></h5>
+								</li>
+								<li>
+									<h5>domain: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;https://api.tzkt.io&#x27;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Returns a list of contracts.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="similar" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> similar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">similar<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/contract.SimilarParameters.html" class="tsd-signature-type" data-tsd-kind="Interface">SimilarParameters</a>, domain<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dpfens/tzktJS/blob/9899727/src/contract.ts#L275">contract.ts:275</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches contracts which have the same interface (parameter and storage types) as the specified one from <a href="https://tzkt.io/" class="external">tzKT</a>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remark</dt>
+									<dd><p>Note, contract parameter and storage types are compared by 32-bit hash, so in very rare cases there may be collisions.</p>
+									</dd>
+									<dt>see</dt>
+									<dd><p><a href="https://api.tzkt.io/#operation/Contracts_GetSimilar" class="external">get similar contracts</a>.</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p>Fetch Similar Contracts</p>
+										<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+											<h1>Usage</h1>
+										</a>
+										<pre><code class="language-typescript"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">contractAddress</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;KT1Sc5aXe5ZADkbdbXSBo2v6wNDgFP9XafRs&#039;</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">contracts</span><span style="color: #000000">: </span><span style="color: #267F99">Contract</span><span style="color: #000000">[] = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">Contract</span><span style="color: #000000">.</span><span style="color: #795E26">similar</span><span style="color: #000000">(</span><span style="color: #001080">contractAddress</span><span style="color: #000000">);</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>address: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>parameters: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/contract.SimilarParameters.html" class="tsd-signature-type" data-tsd-kind="Interface">SimilarParameters</a></h5>
+								</li>
+								<li>
+									<h5>domain: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;https://api.tzkt.io&#x27;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="contract.Contract.html" class="tsd-signature-type" data-tsd-kind="Class">Contract</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Returns a list of contracts.</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/account.html">account</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/bigmap.html">bigmap</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/block.html">block</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/commitment.html">commitment</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/contract.html">contract</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/cycle.html">cycle</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/delegate.html">delegate</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/head.html">head</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/operation.html">operation</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/protocol.html">protocol</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/quote.html">quote</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/reward.html">reward</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/right.html">right</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/software.html">software</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/statistics.html">statistics</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/types.html">types</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/voting.html">voting</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="contract.Contract.html" class="tsd-kind-icon">Contract</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="contract.Contract.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#address" class="tsd-kind-icon">address</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#alias" class="tsd-kind-icon">alias</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#balance" class="tsd-kind-icon">balance</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#contracts" class="tsd-kind-icon">contracts</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#counter" class="tsd-kind-icon">counter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contract.Contract.html#delegate" class="tsd-kind-icon">delegate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#delegationLevel" class="tsd-kind-icon">delegation<wbr>Level</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#delegationTime" class="tsd-kind-icon">delegation<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#firstActivity" class="tsd-kind-icon">first<wbr>Activity</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#firstActivityTime" class="tsd-kind-icon">first<wbr>Activity<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#lastActivity" class="tsd-kind-icon">last<wbr>Activity</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#lastActivityTime" class="tsd-kind-icon">last<wbr>Activity<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#metadata" class="tsd-kind-icon">metadata</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#numActivations" class="tsd-kind-icon">num<wbr>Activations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#numContracts" class="tsd-kind-icon">num<wbr>Contracts</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#numDelegations" class="tsd-kind-icon">num<wbr>Delegations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#numMigrations" class="tsd-kind-icon">num<wbr>Migrations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#numOriginations" class="tsd-kind-icon">num<wbr>Originations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#numReveals" class="tsd-kind-icon">num<wbr>Reveals</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#numTransactions" class="tsd-kind-icon">num<wbr>Transactions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#operations" class="tsd-kind-icon">operations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#publicKey" class="tsd-kind-icon">public<wbr>Key</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#revealed" class="tsd-kind-icon">revealed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#type" class="tsd-kind-icon">type</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="contract.Contract.html#toString" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="contract.Contract.html#byAccount" class="tsd-kind-icon">by<wbr>Account</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="contract.Contract.html#byAddress" class="tsd-kind-icon">by<wbr>Address</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="contract.Contract.html#code" class="tsd-kind-icon">code</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="contract.Contract.html#count" class="tsd-kind-icon">count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static">
+								<a href="contract.Contract.html#fromAPI" class="tsd-kind-icon">fromAPI</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="contract.Contract.html#get" class="tsd-kind-icon">get</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="contract.Contract.html#similar" class="tsd-kind-icon">similar</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="contract.EntryPoint.html" class="tsd-kind-icon">Entry<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/contract.EntryPointByNameParameters.html" class="tsd-kind-icon">Entry<wbr>Point<wbr>ByName<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/contract.GetContractParameters.html" class="tsd-kind-icon">Get<wbr>Contract<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/contract.SimilarParameters.html" class="tsd-kind-icon">Similar<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/contract.getRelatedToAddressParameters.html" class="tsd-kind-icon">get<wbr>Related<wbr>ToAddress<wbr>Parameters</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-56708312-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
